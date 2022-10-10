@@ -21,7 +21,7 @@ const BlogsDisplay = ({id, author, description, title}) => {
                     >{description}</Markdown>
                 </div>
             </main>
-            <BlogsDisplaySide />
+            <BlogsDisplaySide blogId={id} />
         </div>
     )
 }

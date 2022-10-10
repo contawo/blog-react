@@ -8,19 +8,20 @@ const BlogContextProvider = ({children}) => {
     const [languageData, setLanguageData] = useState([]);
     const [language, setLanguage] = useState("")
     const [userLogin, setUserLogin] = useState(false);
-    const [username, setUsername] = useState("");
+    const [username, setUsername] = useState("username");
+    const [userEmail, setUserEmail] = useState("user@gmail.com");
 
+    useEffect(() => {
+        window.localStorage.setItem('THEME', JSON.stringify(theme));
+        window.localStorage.setItem('CLICKED', JSON.stringify(isClicked))
+    }, [theme, isClicked])
+    
     useEffect(() => {
         const data = window.localStorage.getItem('THEME')
         const result = window.localStorage.getItem('CLICKED')
         setTheme(JSON.parse(data))
         setIsClicked(JSON.parse(result))
     }, [])
-
-    useEffect(() => {
-        window.localStorage.setItem('THEME', JSON.stringify(theme));
-        window.localStorage.setItem('CLICKED', JSON.stringify(isClicked))
-    }, [theme, isClicked])
 
     const values = {
         theme, 
@@ -34,7 +35,9 @@ const BlogContextProvider = ({children}) => {
         userLogin,
         setUserLogin,
         username,
-        setUsername
+        setUsername,
+        userEmail,
+        setUserEmail
     }
 
     return (

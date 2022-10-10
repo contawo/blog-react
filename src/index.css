@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
   font-family: 'Inter', sans-serif;
@@ -552,6 +552,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 80%;
+}
+
+.blog-display > h1 {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .blogs-display-lan {
@@ -559,7 +565,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  margin: 5rem;
+  margin: 1rem;
   gap: 5rem;
 }
 
@@ -598,6 +604,68 @@ body {
   color: white;
 }
 
+/* -------------- Login Page ------------------ */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
+.login-container-title {
+  font-size: 2.5rem;
+}
+
+.user-login-username {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.login-container-content {
+  display: flex;
+  margin: 2rem;
+}
+
+.light .login-container-content-company {
+  background-color: var(--light-color);
+}
+
+.dark .login-container-content-company {
+  background-color: var(--dark-color);
+}
+
+.login-container-content-company {
+  border-radius: 20px;
+  height: 18rem;
+  padding: 2rem;
+  margin: 2rem;
+  transition: .5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container-content-company > h3 {
+  margin-top: 1rem;
+}
+
+.login-container-content-company:hover {
+  background-color: var(--call-to-action);
+  transform: scale(1.1);
+}
+
+.login-container-content-company-name {
+  padding: 4rem;
+}
+
+.login-container-content-company-name > * {
+  font-size: 4rem;
+}
+
 /* ------- Page Not Found --------------- */
 .page-not-found-content {
   display: flex;
@@ -629,6 +697,62 @@ body {
 
 .page-not-found-content-open > h4 {
   margin-left: .5rem;
+}
+
+/* ------------------- Profile ------------------- */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
+.profile-content-title {
+  font-size: 2.5rem;
+}
+
+.profile-content-main {
+  position: relative;
+  margin: 2.5rem;
+  margin-bottom: 8rem;
+}
+
+.profile-content-main-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12rem;
+  width: 48rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.profile-content-main-details {
+  width: 48rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-content-main-details > h3 {
+  margin-bottom: .2rem;
+  font-size: 1.5rem;
+}
+
+.profile-content-main-details > p {
+  margin-bottom: .8rem;
+}
+
+.profile-content-main-details > button {
+  background-color: var(--call-to-action);
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  width: 8rem;
 }
 
 /* ------- dark theme ---------- */
