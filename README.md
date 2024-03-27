@@ -5,15 +5,18 @@ Welcome to my first blog website! This project was built from scratch using Reac
 This blog website was my initial attempt at creating a platform to share my thoughts and experiences. Here's what it currently offers:
 1. **Static Routes**: I've set up basic routes for different pages (e.g., home, about, contact).
 2. **UI Basics**: The user interface is simple and functional. It's a testament to my early design skills.
+3. **Theme toggling**: You can change between light theme and dark theme.
 
 ## Features to Be Updated
 1. **Dynamic Routes**: Enhance the website by adding dynamic routes for individual blog posts. Each post will have its own URL.
 2. **Content Management System (CMS)**: Integrate a CMS to make it easier to create, edit, and manage blog content. No more manual HTML updates!
 3. **UI Overhaul**: The current design is minimalistic. Give it a fresh coat of paint, add some styling, and make it more visually appealing.
+4. **Responsive**: Make the application responsive for small devices.
 
 ## Tech Stack
-- **React.js**: My trusty frontend library.
+- **React.js**: My trusty frontend library with the `context api`.
 - **Static Routes**: Basic routing for different pages.
+- **Firebase**: For authentication.
 
 ## Getting Started
 1. **Clone the Repository**: Get started by cloning this repository to your local machine.
